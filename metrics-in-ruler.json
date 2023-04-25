@@ -1,0 +1,603 @@
+{
+    "metricsUsed": [
+      "ALERTS",
+      "aggregator_unavailable_apiservice",
+      "aggregator_unavailable_apiservice_total",
+      "alertmanager_cluster_members",
+      "alertmanager_config_hash",
+      "alertmanager_config_last_reload_successful",
+      "alertmanager_notifications_failed_total",
+      "alertmanager_notifications_total",
+      "apiserver_client_certificate_expiration_seconds_bucket",
+      "apiserver_client_certificate_expiration_seconds_count",
+      "apiserver_request:burnrate1d",
+      "apiserver_request:burnrate1h",
+      "apiserver_request:burnrate2h",
+      "apiserver_request:burnrate30m",
+      "apiserver_request:burnrate3d",
+      "apiserver_request:burnrate5m",
+      "apiserver_request:burnrate6h",
+      "apiserver_request_slo_duration_seconds_bucket",
+      "apiserver_request_slo_duration_seconds_count",
+      "apiserver_request_terminations_total",
+      "apiserver_request_total",
+      "container_cpu_cfs_periods_total",
+      "container_cpu_cfs_throttled_periods_total",
+      "container_cpu_usage_seconds_total",
+      "container_memory_cache",
+      "container_memory_rss",
+      "container_memory_swap",
+      "container_memory_working_set_bytes",
+      "etcd_disk_backend_commit_duration_seconds_bucket",
+      "etcd_disk_wal_fsync_duration_seconds_bucket",
+      "etcd_mvcc_db_total_size_in_bytes",
+      "etcd_mvcc_db_total_size_in_use_in_bytes",
+      "etcd_network_peer_round_trip_time_seconds_bucket",
+      "etcd_network_peer_sent_failures_total",
+      "etcd_server_has_leader",
+      "etcd_server_leader_changes_seen_total",
+      "etcd_server_proposals_failed_total",
+      "etcd_server_quota_backend_bytes",
+      "grpc_server_handled_total",
+      "grpc_server_handling_seconds_bucket",
+      "kube_daemonset_status_current_number_scheduled",
+      "kube_daemonset_status_desired_number_scheduled",
+      "kube_daemonset_status_number_available",
+      "kube_daemonset_status_number_misscheduled",
+      "kube_daemonset_status_updated_number_scheduled",
+      "kube_deployment_metadata_generation",
+      "kube_deployment_spec_replicas",
+      "kube_deployment_status_observed_generation",
+      "kube_deployment_status_replicas_available",
+      "kube_deployment_status_replicas_updated",
+      "kube_horizontalpodautoscaler_spec_max_replicas",
+      "kube_horizontalpodautoscaler_spec_min_replicas",
+      "kube_horizontalpodautoscaler_status_current_replicas",
+      "kube_horizontalpodautoscaler_status_desired_replicas",
+      "kube_job_failed",
+      "kube_job_status_active",
+      "kube_job_status_start_time",
+      "kube_node_spec_taint",
+      "kube_node_status_allocatable",
+      "kube_node_status_capacity",
+      "kube_node_status_condition",
+      "kube_persistentvolume_status_phase",
+      "kube_persistentvolumeclaim_access_mode",
+      "kube_persistentvolumeclaim_labels",
+      "kube_pod_container_resource_limits",
+      "kube_pod_container_resource_requests",
+      "kube_pod_container_status_waiting_reason",
+      "kube_pod_info",
+      "kube_pod_owner",
+      "kube_pod_status_phase",
+      "kube_replicaset_owner",
+      "kube_resourcequota",
+      "kube_state_metrics_list_total",
+      "kube_state_metrics_shard_ordinal",
+      "kube_state_metrics_total_shards",
+      "kube_state_metrics_watch_total",
+      "kube_statefulset_metadata_generation",
+      "kube_statefulset_replicas",
+      "kube_statefulset_status_current_revision",
+      "kube_statefulset_status_observed_generation",
+      "kube_statefulset_status_replicas",
+      "kube_statefulset_status_replicas_ready",
+      "kube_statefulset_status_replicas_updated",
+      "kube_statefulset_status_update_revision",
+      "kubelet_certificate_manager_client_expiration_renew_errors",
+      "kubelet_certificate_manager_client_ttl_seconds",
+      "kubelet_certificate_manager_server_ttl_seconds",
+      "kubelet_node_name",
+      "kubelet_pleg_relist_duration_seconds_bucket",
+      "kubelet_pod_worker_duration_seconds_bucket",
+      "kubelet_server_expiration_renew_errors",
+      "kubelet_volume_stats_available_bytes",
+      "kubelet_volume_stats_capacity_bytes",
+      "kubelet_volume_stats_inodes",
+      "kubelet_volume_stats_inodes_free",
+      "kubelet_volume_stats_inodes_used",
+      "kubelet_volume_stats_used_bytes",
+      "kubernetes_build_info",
+      "namespace_cpu:kube_pod_container_resource_requests:sum",
+      "namespace_memory:kube_pod_container_resource_requests:sum",
+      "node_cpu_seconds_total",
+      "node_disk_io_time_seconds_total",
+      "node_disk_io_time_weighted_seconds_total",
+      "node_filefd_allocated",
+      "node_filefd_maximum",
+      "node_filesystem_avail_bytes",
+      "node_filesystem_files",
+      "node_filesystem_files_free",
+      "node_filesystem_readonly",
+      "node_filesystem_size_bytes",
+      "node_load1",
+      "node_md_disks",
+      "node_md_disks_required",
+      "node_memory_Buffers_bytes",
+      "node_memory_Cached_bytes",
+      "node_memory_MemAvailable_bytes",
+      "node_memory_MemFree_bytes",
+      "node_memory_MemTotal_bytes",
+      "node_memory_Slab_bytes",
+      "node_network_receive_bytes_total",
+      "node_network_receive_drop_total",
+      "node_network_receive_errs_total",
+      "node_network_receive_packets_total",
+      "node_network_transmit_bytes_total",
+      "node_network_transmit_drop_total",
+      "node_network_transmit_errs_total",
+      "node_network_transmit_packets_total",
+      "node_network_up",
+      "node_nf_conntrack_entries",
+      "node_nf_conntrack_entries_limit",
+      "node_quantile:kubelet_pleg_relist_duration_seconds:histogram_quantile",
+      "node_textfile_scrape_error",
+      "node_timex_maxerror_seconds",
+      "node_timex_offset_seconds",
+      "node_timex_sync_status",
+      "node_vmstat_pgmajfault",
+      "process_start_time_seconds",
+      "prometheus_config_last_reload_successful",
+      "prometheus_engine_queries",
+      "prometheus_engine_queries_concurrent_max",
+      "prometheus_notifications_alertmanagers_discovered",
+      "prometheus_notifications_errors_total",
+      "prometheus_notifications_queue_capacity",
+      "prometheus_notifications_queue_length",
+      "prometheus_notifications_sent_total",
+      "prometheus_operator_list_operations_failed_total",
+      "prometheus_operator_list_operations_total",
+      "prometheus_operator_managed_resources",
+      "prometheus_operator_node_address_lookup_errors_total",
+      "prometheus_operator_ready",
+      "prometheus_operator_reconcile_errors_total",
+      "prometheus_operator_reconcile_operations_total",
+      "prometheus_operator_syncs",
+      "prometheus_operator_watch_operations_failed_total",
+      "prometheus_operator_watch_operations_total",
+      "prometheus_remote_storage_failed_samples_total",
+      "prometheus_remote_storage_highest_timestamp_in_seconds",
+      "prometheus_remote_storage_queue_highest_sent_timestamp_seconds",
+      "prometheus_remote_storage_samples_failed_total",
+      "prometheus_remote_storage_samples_total",
+      "prometheus_remote_storage_shards_desired",
+      "prometheus_remote_storage_shards_max",
+      "prometheus_remote_storage_succeeded_samples_total",
+      "prometheus_rule_evaluation_failures_total",
+      "prometheus_rule_group_iterations_missed_total",
+      "prometheus_rule_group_rules",
+      "prometheus_target_metadata_cache_entries",
+      "prometheus_target_scrape_pool_exceeded_label_limits_total",
+      "prometheus_target_scrape_pool_exceeded_target_limit_total",
+      "prometheus_target_scrapes_exceeded_body_size_limit_total",
+      "prometheus_target_scrapes_exceeded_sample_limit_total",
+      "prometheus_target_scrapes_sample_duplicate_timestamp_total",
+      "prometheus_target_scrapes_sample_out_of_order_total",
+      "prometheus_target_sync_failed_total",
+      "prometheus_tsdb_compactions_failed_total",
+      "prometheus_tsdb_head_samples_appended_total",
+      "prometheus_tsdb_reloads_failures_total",
+      "reloader_last_reload_successful",
+      "rest_client_requests_total",
+      "scheduler_binding_duration_seconds_bucket",
+      "scheduler_e2e_scheduling_duration_seconds_bucket",
+      "scheduler_scheduling_algorithm_duration_seconds_bucket",
+      "up"
+    ],
+    "ruleGroups": [
+      {
+        "namspace": "my-prom-rules",
+        "name": "node-network",
+        "metrics": [
+          "node_network_up"
+        ],
+        "parse_errors": null
+      },
+      {
+        "namspace": "my-prom-rules",
+        "name": "kubernetes-system-apiserver",
+        "metrics": [
+          "aggregator_unavailable_apiservice",
+          "aggregator_unavailable_apiservice_total",
+          "apiserver_client_certificate_expiration_seconds_bucket",
+          "apiserver_client_certificate_expiration_seconds_count",
+          "apiserver_request_terminations_total",
+          "apiserver_request_total",
+          "up"
+        ],
+        "parse_errors": null
+      },
+      {
+        "namspace": "my-prom-rules",
+        "name": "kube-apiserver-slos",
+        "metrics": [
+          "apiserver_request:burnrate1d",
+          "apiserver_request:burnrate1h",
+          "apiserver_request:burnrate2h",
+          "apiserver_request:burnrate30m",
+          "apiserver_request:burnrate3d",
+          "apiserver_request:burnrate5m",
+          "apiserver_request:burnrate6h"
+        ],
+        "parse_errors": null
+      },
+      {
+        "namspace": "my-prom-rules",
+        "name": "prometheus-operator",
+        "metrics": [
+          "prometheus_operator_list_operations_failed_total",
+          "prometheus_operator_list_operations_total",
+          "prometheus_operator_managed_resources",
+          "prometheus_operator_node_address_lookup_errors_total",
+          "prometheus_operator_ready",
+          "prometheus_operator_reconcile_errors_total",
+          "prometheus_operator_reconcile_operations_total",
+          "prometheus_operator_syncs",
+          "prometheus_operator_watch_operations_failed_total",
+          "prometheus_operator_watch_operations_total"
+        ],
+        "parse_errors": null
+      },
+      {
+        "namspace": "my-prom-rules",
+        "name": "kubelet.rules",
+        "metrics": [
+          "kubelet_node_name",
+          "kubelet_pleg_relist_duration_seconds_bucket"
+        ],
+        "parse_errors": null
+      },
+      {
+        "namspace": "my-prom-rules",
+        "name": "kubernetes-system",
+        "metrics": [
+          "kubernetes_build_info",
+          "rest_client_requests_total"
+        ],
+        "parse_errors": null
+      },
+      {
+        "namspace": "my-prom-rules",
+        "name": "kubernetes-system-scheduler",
+        "metrics": [
+          "up"
+        ],
+        "parse_errors": null
+      },
+      {
+        "namspace": "my-prom-rules",
+        "name": "kube-state-metrics",
+        "metrics": [
+          "kube_state_metrics_list_total",
+          "kube_state_metrics_shard_ordinal",
+          "kube_state_metrics_total_shards",
+          "kube_state_metrics_watch_total"
+        ],
+        "parse_errors": null
+      },
+      {
+        "namspace": "my-prom-rules",
+        "name": "kubernetes-apps",
+        "metrics": [
+          "kube_daemonset_status_current_number_scheduled",
+          "kube_daemonset_status_desired_number_scheduled",
+          "kube_daemonset_status_number_available",
+          "kube_daemonset_status_number_misscheduled",
+          "kube_daemonset_status_updated_number_scheduled",
+          "kube_deployment_metadata_generation",
+          "kube_deployment_spec_replicas",
+          "kube_deployment_status_observed_generation",
+          "kube_deployment_status_replicas_available",
+          "kube_deployment_status_replicas_updated",
+          "kube_horizontalpodautoscaler_spec_max_replicas",
+          "kube_horizontalpodautoscaler_spec_min_replicas",
+          "kube_horizontalpodautoscaler_status_current_replicas",
+          "kube_horizontalpodautoscaler_status_desired_replicas",
+          "kube_job_failed",
+          "kube_job_status_active",
+          "kube_job_status_start_time",
+          "kube_pod_container_status_waiting_reason",
+          "kube_pod_owner",
+          "kube_pod_status_phase",
+          "kube_statefulset_metadata_generation",
+          "kube_statefulset_replicas",
+          "kube_statefulset_status_current_revision",
+          "kube_statefulset_status_observed_generation",
+          "kube_statefulset_status_replicas",
+          "kube_statefulset_status_replicas_ready",
+          "kube_statefulset_status_replicas_updated",
+          "kube_statefulset_status_update_revision"
+        ],
+        "parse_errors": null
+      },
+      {
+        "namspace": "my-prom-rules",
+        "name": "kube-scheduler.rules",
+        "metrics": [
+          "scheduler_binding_duration_seconds_bucket",
+          "scheduler_e2e_scheduling_duration_seconds_bucket",
+          "scheduler_scheduling_algorithm_duration_seconds_bucket"
+        ],
+        "parse_errors": null
+      },
+      {
+        "namspace": "my-prom-rules",
+        "name": "k8s.rules",
+        "metrics": [
+          "container_cpu_usage_seconds_total",
+          "container_memory_cache",
+          "container_memory_rss",
+          "container_memory_swap",
+          "container_memory_working_set_bytes",
+          "kube_pod_container_resource_limits",
+          "kube_pod_container_resource_requests",
+          "kube_pod_info",
+          "kube_pod_owner",
+          "kube_pod_status_phase",
+          "kube_replicaset_owner"
+        ],
+        "parse_errors": null
+      },
+      {
+        "namspace": "my-prom-rules",
+        "name": "kubernetes-system-kube-proxy",
+        "metrics": [
+          "up"
+        ],
+        "parse_errors": null
+      },
+      {
+        "namspace": "my-prom-rules",
+        "name": "node-exporter.rules",
+        "metrics": [
+          "node_cpu_seconds_total",
+          "node_disk_io_time_seconds_total",
+          "node_disk_io_time_weighted_seconds_total",
+          "node_load1",
+          "node_memory_Buffers_bytes",
+          "node_memory_Cached_bytes",
+          "node_memory_MemAvailable_bytes",
+          "node_memory_MemFree_bytes",
+          "node_memory_MemTotal_bytes",
+          "node_memory_Slab_bytes",
+          "node_network_receive_bytes_total",
+          "node_network_receive_drop_total",
+          "node_network_transmit_bytes_total",
+          "node_network_transmit_drop_total",
+          "node_vmstat_pgmajfault"
+        ],
+        "parse_errors": null
+      },
+      {
+        "namspace": "my-prom-rules",
+        "name": "general.rules",
+        "metrics": [
+          "ALERTS",
+          "up"
+        ],
+        "parse_errors": null
+      },
+      {
+        "namspace": "my-prom-rules",
+        "name": "kubernetes-system-controller-manager",
+        "metrics": [
+          "up"
+        ],
+        "parse_errors": null
+      },
+      {
+        "namspace": "my-prom-rules",
+        "name": "kube-prometheus-node-recording.rules",
+        "metrics": [
+          "node_cpu_seconds_total",
+          "node_network_receive_bytes_total",
+          "node_network_transmit_bytes_total"
+        ],
+        "parse_errors": null
+      },
+      {
+        "namspace": "my-prom-rules",
+        "name": "node.rules",
+        "metrics": [
+          "kube_pod_info",
+          "node_cpu_seconds_total",
+          "node_memory_Buffers_bytes",
+          "node_memory_Cached_bytes",
+          "node_memory_MemAvailable_bytes",
+          "node_memory_MemFree_bytes",
+          "node_memory_Slab_bytes"
+        ],
+        "parse_errors": null
+      },
+      {
+        "namspace": "my-prom-rules",
+        "name": "kubernetes-system-kubelet",
+        "metrics": [
+          "kube_node_spec_taint",
+          "kube_node_status_capacity",
+          "kube_node_status_condition",
+          "kube_pod_info",
+          "kube_pod_status_phase",
+          "kubelet_certificate_manager_client_expiration_renew_errors",
+          "kubelet_certificate_manager_client_ttl_seconds",
+          "kubelet_certificate_manager_server_ttl_seconds",
+          "kubelet_node_name",
+          "kubelet_pod_worker_duration_seconds_bucket",
+          "kubelet_server_expiration_renew_errors",
+          "node_quantile:kubelet_pleg_relist_duration_seconds:histogram_quantile",
+          "up"
+        ],
+        "parse_errors": null
+      },
+      {
+        "namspace": "my-prom-rules",
+        "name": "alertmanager.rules",
+        "metrics": [
+          "alertmanager_cluster_members",
+          "alertmanager_config_hash",
+          "alertmanager_config_last_reload_successful",
+          "alertmanager_notifications_failed_total",
+          "alertmanager_notifications_total",
+          "process_start_time_seconds",
+          "up"
+        ],
+        "parse_errors": null
+      },
+      {
+        "namspace": "my-prom-rules",
+        "name": "kubernetes-resources",
+        "metrics": [
+          "container_cpu_cfs_periods_total",
+          "container_cpu_cfs_throttled_periods_total",
+          "kube_node_status_allocatable",
+          "kube_resourcequota",
+          "namespace_cpu:kube_pod_container_resource_requests:sum",
+          "namespace_memory:kube_pod_container_resource_requests:sum"
+        ],
+        "parse_errors": null
+      },
+      {
+        "namspace": "my-prom-rules",
+        "name": "etcd",
+        "metrics": [
+          "etcd_disk_backend_commit_duration_seconds_bucket",
+          "etcd_disk_wal_fsync_duration_seconds_bucket",
+          "etcd_mvcc_db_total_size_in_bytes",
+          "etcd_mvcc_db_total_size_in_use_in_bytes",
+          "etcd_network_peer_round_trip_time_seconds_bucket",
+          "etcd_network_peer_sent_failures_total",
+          "etcd_server_has_leader",
+          "etcd_server_leader_changes_seen_total",
+          "etcd_server_proposals_failed_total",
+          "etcd_server_quota_backend_bytes",
+          "grpc_server_handled_total",
+          "grpc_server_handling_seconds_bucket",
+          "up"
+        ],
+        "parse_errors": null
+      },
+      {
+        "namspace": "my-prom-rules",
+        "name": "kube-apiserver-histogram.rules",
+        "metrics": [
+          "apiserver_request_slo_duration_seconds_bucket"
+        ],
+        "parse_errors": null
+      },
+      {
+        "namspace": "my-prom-rules",
+        "name": "kube-apiserver-burnrate.rules",
+        "metrics": [
+          "apiserver_request_slo_duration_seconds_bucket",
+          "apiserver_request_slo_duration_seconds_count",
+          "apiserver_request_total"
+        ],
+        "parse_errors": null
+      },
+      {
+        "namspace": "my-prom-rules",
+        "name": "kube-apiserver-availability.rules",
+        "metrics": [
+          "apiserver_request_slo_duration_seconds_bucket",
+          "apiserver_request_slo_duration_seconds_count",
+          "apiserver_request_total"
+        ],
+        "parse_errors": null
+      },
+      {
+        "namspace": "my-prom-rules",
+        "name": "kubernetes-storage",
+        "metrics": [
+          "kube_persistentvolume_status_phase",
+          "kube_persistentvolumeclaim_access_mode",
+          "kube_persistentvolumeclaim_labels",
+          "kubelet_volume_stats_available_bytes",
+          "kubelet_volume_stats_capacity_bytes",
+          "kubelet_volume_stats_inodes",
+          "kubelet_volume_stats_inodes_free",
+          "kubelet_volume_stats_inodes_used",
+          "kubelet_volume_stats_used_bytes"
+        ],
+        "parse_errors": null
+      },
+      {
+        "namspace": "my-prom-rules",
+        "name": "kube-prometheus-general.rules",
+        "metrics": [
+          "up"
+        ],
+        "parse_errors": null
+      },
+      {
+        "namspace": "my-prom-rules",
+        "name": "prometheus",
+        "metrics": [
+          "prometheus_config_last_reload_successful",
+          "prometheus_engine_queries",
+          "prometheus_engine_queries_concurrent_max",
+          "prometheus_notifications_alertmanagers_discovered",
+          "prometheus_notifications_errors_total",
+          "prometheus_notifications_queue_capacity",
+          "prometheus_notifications_queue_length",
+          "prometheus_notifications_sent_total",
+          "prometheus_remote_storage_failed_samples_total",
+          "prometheus_remote_storage_highest_timestamp_in_seconds",
+          "prometheus_remote_storage_queue_highest_sent_timestamp_seconds",
+          "prometheus_remote_storage_samples_failed_total",
+          "prometheus_remote_storage_samples_total",
+          "prometheus_remote_storage_shards_desired",
+          "prometheus_remote_storage_shards_max",
+          "prometheus_remote_storage_succeeded_samples_total",
+          "prometheus_rule_evaluation_failures_total",
+          "prometheus_rule_group_iterations_missed_total",
+          "prometheus_rule_group_rules",
+          "prometheus_target_metadata_cache_entries",
+          "prometheus_target_scrape_pool_exceeded_label_limits_total",
+          "prometheus_target_scrape_pool_exceeded_target_limit_total",
+          "prometheus_target_scrapes_exceeded_body_size_limit_total",
+          "prometheus_target_scrapes_exceeded_sample_limit_total",
+          "prometheus_target_scrapes_sample_duplicate_timestamp_total",
+          "prometheus_target_scrapes_sample_out_of_order_total",
+          "prometheus_target_sync_failed_total",
+          "prometheus_tsdb_compactions_failed_total",
+          "prometheus_tsdb_head_samples_appended_total",
+          "prometheus_tsdb_reloads_failures_total"
+        ],
+        "parse_errors": null
+      },
+      {
+        "namspace": "my-prom-rules",
+        "name": "node-exporter",
+        "metrics": [
+          "node_filefd_allocated",
+          "node_filefd_maximum",
+          "node_filesystem_avail_bytes",
+          "node_filesystem_files",
+          "node_filesystem_files_free",
+          "node_filesystem_readonly",
+          "node_filesystem_size_bytes",
+          "node_md_disks",
+          "node_md_disks_required",
+          "node_network_receive_errs_total",
+          "node_network_receive_packets_total",
+          "node_network_transmit_errs_total",
+          "node_network_transmit_packets_total",
+          "node_nf_conntrack_entries",
+          "node_nf_conntrack_entries_limit",
+          "node_textfile_scrape_error",
+          "node_timex_maxerror_seconds",
+          "node_timex_offset_seconds",
+          "node_timex_sync_status"
+        ],
+        "parse_errors": null
+      },
+      {
+        "namspace": "my-prom-rules",
+        "name": "config-reloaders",
+        "metrics": [
+          "reloader_last_reload_successful"
+        ],
+        "parse_errors": null
+      }
+    ]
+  }
